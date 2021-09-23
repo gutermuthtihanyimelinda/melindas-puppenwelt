@@ -1,0 +1,90 @@
+body {
+    /* margin: auto 0; */
+    background-color: #2B2920;
+}
+
+.main-nav {
+    display: flex;
+    background-color: #2B2920;
+    list-style: none;
+    font-size: 0.7em;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+    margin: 0;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+
+
+li {
+    padding: 10px;
+}
+
+a {
+    color: #CBCACA;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.container {
+    display: grid;
+    margin: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+  }
+
+.container img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .horizontal{
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+img {
+    transition: all 2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #CBCACA;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;;
+    font-size: 1em;
+    text-align: center;
+    bottom:0;
+}
+
+/* #garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+} */

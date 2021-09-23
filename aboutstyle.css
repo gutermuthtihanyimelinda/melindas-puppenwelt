@@ -1,0 +1,68 @@
+body {
+    /* margin: auto 0; */
+    background-color: #2B2920;
+}
+
+.main-nav {
+    display: flex;
+    background-color: #2B2920;
+    list-style: none;
+    font-size: 0.7em;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+    margin: 0;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    color: #CBCACA;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo introtext introtext"
+    
+}
+
+.photo {
+    grid-area: photo;
+    height: 100%;
+    background-size: cover; /* <-- background size */
+    background-position: center; /* <-- background position */
+}
+
+
+.introtext {
+    font-family: 'Architects Daughter', cursive;
+    color: #CBCACA;
+}
+
+footer {
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #CBCACA;
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;;
+    font-size: 1em;
+    text-align: center;
+    bottom:0;
+}

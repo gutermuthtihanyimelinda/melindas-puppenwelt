@@ -1,0 +1,29 @@
+.nav-link, .mb-3 {
+    font-family: 'Architects Daughter', 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.mb-3 {
+    font-size: 4rem;
+    opacity: 0.5;
+}
+
+.img-fluid {
+    width: 350px;
+    height: 450px;
+}
+
+.btn-danger {
+    background-size: 2em;
+}
+
+.center-text {
+    text-align: center;
+    text-size-adjust: 5rem;
+}
